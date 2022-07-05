@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.MagnusOS.widget">
+    package="com.JavaneseOS.widget">
 
     <application
         android:name=".BaseApplication"
@@ -9,14 +9,14 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true" >
-        <receiver android:name=".MagnusWidgetProvider">
+        <receiver android:name=".JavaneseWidgetProvider">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
 
             <meta-data
                 android:name="android.appwidget.provider"
-                android:resource="@xml/magnus_widget_info" />
+                android:resource="@xml/javanese_widget_info" />
         </receiver>
     </application>
 </manifest>
