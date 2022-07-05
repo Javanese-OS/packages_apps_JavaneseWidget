@@ -1,4 +1,4 @@
-package com.MagnusOS.widget
+package com.JavaneseOS.widget
 
 import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
@@ -32,7 +32,7 @@ class MagnusWidgetProvider : AppWidgetProvider() {
                             appWidgetId: Int) {
 
             // Construct the RemoteViews object
-            val views = RemoteViews(context.packageName, R.layout.magnus_widget)
+            val views = RemoteViews(context.packageName, R.layout.javanese_widget)
 
             val clockPackage = "com.android.deskclock"
             val clockClass = "com.android.deskclock.DeskClock"
@@ -44,7 +44,7 @@ class MagnusWidgetProvider : AppWidgetProvider() {
                     )
             val pendingIntent = PendingIntent.getActivity(context, 0, clockIntent, 0)
             // Open clock app on click
-            views.setOnClickPendingIntent(R.id.magnus_widget, pendingIntent)
+            views.setOnClickPendingIntent(R.id.javanese_widget, pendingIntent)
 
             // Instruct the widget manager to update the widget
             appWidgetManager.updateAppWidget(appWidgetId, views)
