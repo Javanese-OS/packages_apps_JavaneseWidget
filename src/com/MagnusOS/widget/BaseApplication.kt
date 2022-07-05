@@ -1,4 +1,4 @@
-package com.MagnusOS.widget
+package com.JavaneseOS.widget
 
 import android.app.Application
 
